@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sploot! Pet Care</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="preload" as="image" href="pugcat.jpeg">
+    <link rel="preload" as="image" href="pupone.jpeg">
+    <link rel="preload" as="image" href="puptwo.jpeg">
+    <link rel="preload" as="image" href="gcat.jpeg">
+    <link rel="preload" as="image" href="whhitepup.jpeg">
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    </script>
+
+
+    <style>
+        html,
+        body {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            font-family: 'Trebuchet MS';
+            background: orange;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .footy {
+            position: relative;
+            margin-left: 28% !important;
+            bottom: 0;
+            color: rgb(255, 255, 255) !important;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        container {
+            text-align: center;
+            background: stretch;
+            margin-left: 0px !important;
+            margin-bottom: 30px !important;
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+            height: 90%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            font-family: 'Trebuchet MS';
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .navbar {
+            font-size: 25px;
+            text-shadow: 1px 1px 1px white;
+        }
+
+        .row {
+
+            display: flex;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+        }
+
+        h3,
+        h4 {
+            text-align: center;
+            font-weight: 1000;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+        }
+
+        .h5 {
+            color: white;
+        }
+
+        h6 {
+            font-size: 12px;
+            color: white !important;
+        }
+
+        .footer {
+            position: center;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            body {
+
+                width: auto;
+                height: auto;
+                background: fixed no-repeat;
+            }
+
+            .footy {
+                margin-left: 2% !important;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+
+            container {
+
+                width: 100%;
+                height: 70%;
+                background: center;
+            }
+
+            .contact {
+                color: rgb(88, 88, 255);
+                font-size: 25px;
+            }
+
+
+
+            a {
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (min-width: 601px) {
+            .navheader {
+                font-size: 40px;
+                text-shadow: 1px 1px 1px white;
+            }
+
+
+
+            .contact {
+                color: rgb(129, 129, 255);
+                font-size: 30px;
+            }
+
+
+
+            .navbar li {
+                text-align: center;
+                margin-right: 20px;
+                color: rgb(173, 147, 147);
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .navheader {
+                font-size: 40px;
+                text-align: center;
+                padding: 1px;
+                margin: 2px;
+                line-height: 27pt;
+                text-shadow: 1px 1px 1px white;
+            }
+
+            .navbar li {
+                text-align: center;
+                margin-right: 10px;
+                color: rgb(173, 147, 147);
+            }
+
+
+            .navitems {
+                font-size: 14px;
+                padding-right: 12px;
+
+            }
+
+            h3 {
+                font-size: 8px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        nav {
+            color: white;
+        }
+
+        nav li {
+            display: inline-flex;
+            margin: auto;
+        }
+
+        a:hover {
+            color: rgb(90, 90, 253);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="navheader navbar-brand" href="./index.html">
+            <strong>Sploot<a href=”https://www.splootpetcare.com”>!</a> Pet Care</strong>
+        </div>
+        <br />
+
+        <ul>
+            <li><a href="./index.html" id="Logo">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="col">
+        <container class="row">
+            <div class="footy">
+                <div>
+                    <div>
+
+                        <h2><strong>Contact:</strong></h2>
+                        <legend></legend>
+                        <br />
+                        <h4>Professional Inquiries Please Contact via Email or Text!</h4>
+                        <br>
+                        <h4><strong>Email:</strong></h4>
+                        <h5>
+                            <a href="https://www.gmail.com/" class="contact">
+                                <splootpetcare@gmail class="com">splootpetcare@gmail.com
+                                </splootpetcare@gmail>
+                            </a>
+                        </h5>
+                        <br>
+
+                        <h4>
+                            Phone Number:
+                            <br>
+                            <h3> (773)709-7924 </h3>
+                        </h4>
+                        <br/>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <div class="col">
+                            <div class="footer">
+                                <h6>Areas of service: <br>
+                                    San Diego - Hillcrest, Normal Heights, Kensington, Talmadge, North Park, El
+                                    Cerrito,<br>
+                                    Colina Del Sol, SDSU, USD, UCSD, City Heights, Tierrasanta, Little Italy,
+                                    Downtown,<br>
+                                    South Park, Golden Hill, Banker's Hill, Mission Valley, Clairemont, Bay Ho,
+                                    University
+                                    City,<br>
+                                    La Jolla, Torrey Pines, Mira Mesa, Rancho Penasquitos, Scripps Ranch, Pacific Beach,
+                                    Mission Beach,<br>
+                                    Mission Bay, Point Loma, Sunset Cliffs, Ocean Beach, Barrio Logan, National City,
+                                    Del
+                                    Mar, La Mesa,<br>
+                                    El Cajon, Lemon Grove
+                                    <br />
+                                    <br />
+                                    All Images are My Own Copyright <strong>&copy;</strong> 2024
+
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </container>
+    </div>
+    <br />
+
+</body>
+
+</html>
